@@ -1,0 +1,14 @@
+{
+    "name": "STM32L4 Cloud Dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "marus25.cortex-debug"
+            ]
+        }
+    }
+}
