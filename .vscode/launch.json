@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32L4 (Codespaces)",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/main.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "serverArgs": ["-f", "interface/stlink.cfg", "-f", "target/stm32l4x.cfg"],
+            "interface": "swd",
+            "serverpath": "openocd",
+            "gdbpath": "gdb-multiarch"
+        }
+    ]
+}
